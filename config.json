@@ -1,0 +1,170 @@
+{
+  "UPC": {
+    "CAFETERIA": {
+      "name": "Cafe",
+      "UPC": "CAFETERIA",
+      "description": "cafeteria account",
+      "rules": "put up note that they only need to add it to the first student but can do them all if they want to - all goes to the same account)",
+      "price": 1,
+      "credit_price": 0,
+      "first_free": 0,
+      "limit": 99999,
+      "senior_only": 0
+    },
+    "YEARBOOK": {
+      "name": "Yearbook",
+      "UPC": "YEARBOOK",
+      "description": "class yearbook",
+      "rules": "first is free for all seniors - all other pay",
+      "price": 100,
+      "credit_price": -100,
+      "first_free": 0,
+      "limit": 99999,
+      "senior_only": 0
+    },
+    "QUARTER AD": {
+      "name": "Qtr Ad",
+      "UPC": "QUARTER AD",
+      "description": "yearbook AD - quarter page",
+      "rules": "only seniors can order",
+      "price": 25,
+      "credit_price": -25,
+      "first_free": 0,
+      "limit": 99999,
+      "senior_only": 1
+    },
+    "HALF AD": {
+      "name": "Half Ad",
+      "UPC": "HALF AD",
+      "description": "yearbook AD - half page",
+      "rules": "only seniors can order",
+      "price": 50,
+      "credit_price": -50,
+      "first_free": 0,
+      "limit": 99999,
+      "senior_only": 1
+    },
+    "FULL AD": {
+      "name": "Full Ad",
+      "UPC": "FULL AD",
+      "description": "yearbook AD - full page",
+      "rules": "only seniors can order",
+      "price": 100,
+      "credit_price": -100,
+      "first_free": 0,
+      "limit": 99999,
+      "senior_only": 1
+    },
+    "LANYARD": {
+      "name": "Lanyard",
+      "UPC": "LANYARD",
+      "description": "lanyard",
+      "rules": "first is free for freshman and new students only* - all others pay",
+      "price": 10,
+      "credit_price": -10,
+      "first_free": 0,
+      "limit": 99999,
+      "senior_only": 0
+    },
+    "AGENDA": {
+      "name": "Agenda",
+      "UPC": "AGENDA",
+      "description": "agenda",
+      "rules": "first is free for all students",
+      "price": 10,
+      "credit_price": -10,
+      "first_free": 0,
+      "limit": 99999,
+      "senior_only": 0
+    },
+    "PARKING PASS": {
+      "name": "Parking",
+      "UPC": "PARKING PASS",
+      "description": "parking lot pass",
+      "rules": "1 per student/only seniors can order",
+      "price": 30,
+      "credit_price": -30,
+      "first_free": 0,
+      "limit": 1,
+      "senior_only": 1
+    },
+    "SERVICE CLUB": {
+      "name": "Srv Club",
+      "UPC": "SERVICE CLUB",
+      "description": "service club dues",
+      "rules": "1 per student",
+      "price": 20,
+      "credit_price": -20,
+      "first_free": 0,
+      "limit": 1,
+      "senior_only": 0
+    },
+    "PAC DUES": {
+      "name": "PAC Dues",
+      "UPC": "PAC DUES",
+      "description": "parent action corp dues",
+      "rules": "1 per family so only needs to be done on one kid",
+      "price": 40,
+      "credit_price": -40,
+      "first_free": 0,
+      "limit": 1,
+      "senior_only": 0
+    },
+    "UKNIGHTPATRON": {
+      "name": "UKnight",
+      "UPC": "UKNIGHTPATRON",
+      "description": "Hoagie sales voucher",
+      "rules": "1 per student",
+      "price": 0,
+      "credit_price": 0,
+      "first_free": 0,
+      "limit": 1,
+      "senior_only": 0
+    },
+    "IDBADGE": {
+      "name": "ID Badge",
+      "UPC": "IDBADGE",
+      "description": "ID badge made",
+      "rules": "1 per student",
+      "price": 0,
+      "credit_price": 0,
+      "first_free": 0,
+      "limit": 1,
+      "senior_only": 0
+    }
+  },
+  "VALID_PAYMENT":{
+    "CASH": {
+      "UPC": "CASH"
+    },
+    "CREDIT": {
+      "UPC": "CREDIT"
+    },
+    "CHECK": {
+      "UPC": "CHECK"
+    }
+  },
+  "VALID_AMOUNT":{
+    "PAY IN FULL": {
+        "UPC": "PAY IN FULL"
+    }
+  },
+  "KILL_COMMANDS":{
+    "kill_session":{
+      "name": "KILL"
+    },
+    "cancel_trans":{
+      "name": "CANCEL"
+   },
+    "ready_for_payment":{
+      "name": "PAY NOW"
+    },
+    "view_totals":{
+      "name": "TOTAL"
+    }
+  },
+  "ENVIRONMENT": "production",
+  "RCPT_DIR": "./receipts",
+  "CURRENT_GRADUATION_YEAR": "ClassOf2018",
+  "CURRENT_SCHOOL_YEAR": "2017"
+}
