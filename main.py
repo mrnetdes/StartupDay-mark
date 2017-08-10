@@ -213,7 +213,7 @@ def main():
 
                     # Checking if limit has been reached
                     if (userList[current_user].get_quantity(userInput) >= int(jsonObject['UPC'][str(userInput)]['limit'])):
-                        print(Fore.YELLOW + "There is a limit of " + str(jsonObject['UPC'][str(userInput)]['limit']) + " for this item" + Style.RESET_ALL)
+                        print(Back.YELLOW + "There is a limit of " + str(jsonObject['UPC'][str(userInput)]['limit']) + " for this item" + Style.RESET_ALL)
 
                     # Checking for cafeteria _ NEED TO ADD FAMILY RULE
                     elif (userInput == jsonObject["UPC"]["CAFETERIA"]["UPC"]):
@@ -228,7 +228,7 @@ def main():
                         for person in userList:
                             if (userList[person].is_in_cart("PAC DUES")):
                                 print("PAC_DUES already exists in this transaction")
-                                if (get_yes_no("Do you want to add another PAC_DUES ") == 'n'):
+                                if (get_no_yes("Do you want to add another PAC_DUES ") == 'n'):
                                     found1 = True
                         if not found1 :
                             userList[current_user].add_item(userInput)
@@ -236,7 +236,7 @@ def main():
 
                     # Senior ADs rules
                     elif (int(jsonObject['UPC'][str(userInput)]['senior_only']) == 1 and userList[current_user].year != str(jsonObject["CURRENT_GRADUATION_YEAR"])):
-                        print(Fore.YELLOW + 'this item available for seniors only' + Style.RESET_ALL)
+                        print(Back.YELLOW + 'this item available for seniors only' + Style.RESET_ALL)
 
                     # Senior yearbook rule
                     elif (userInput == jsonObject["UPC"]["YEARBOOK"]["UPC"] and userList[current_user].year == str(jsonObject["CURRENT_GRADUATION_YEAR"])):
@@ -324,7 +324,7 @@ def main():
 
             # Check
             elif (pay_method == jsonObject['VALID_PAYMENT']['CHECK']['UPC']):
-                info = raw_input("\tCheck number: ")
+                info = check_num("\tCheck number: ")
                 payment = amount
                 fee = 0
                 extended_payment = amount
