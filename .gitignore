@@ -102,3 +102,4 @@ ENV/
 *.json
 /logs
 /receipts
+.DS_Store
